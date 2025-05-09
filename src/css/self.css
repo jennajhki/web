@@ -1,92 +1,101 @@
-/* Reset + Font */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    background: #d3d3d3 url('grain-texture.png'); /* grain texture optional */
-    color: #000;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Navigation Bar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #222;
-    padding: 20px 40px;
-    background-color: #e0e0e0;
-  }
-  
-  .logo {
-    font-size: 22px;
-    font-weight: 700;
-  }
-  
-  .nav-links a {
-    margin-left: 40px;
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-    font-size: 16px;
-  }
-  
-  /* Hero Section */
-  .hero {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-  }
-  
-  .image-text {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 60px;
-  }
-  
-  .main-img {
-    width: 300px;
-    max-width: 80vw;
-  }
-  
-  .speech-bubble {
-    font-size: 36px;
-    font-weight: bold;
-    border: 3px solid black;
-    padding: 20px 30px;
-    background: transparent;
-    transform: rotate(-3deg);
-  }
-  
-  /* Socials */
-  .socials {
-    text-align: center;
-  }
-  
-  .socials p {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .icons img {
-    width: 40px;
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .icons img:hover {
-    transform: scale(1.1);
-  }
-  
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #121212; /* Spotify dark background */
+  color: #FFFFFF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding: 20px 40px;
+  background-color: #000; /* Darker top nav */
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: pink; /* Spotify green */
+}
+
+.nav-links a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #B3B3B3;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: pink;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.speech-bubble {
+  font-size: 36px;
+  font-weight: bold;
+  border: 3px solid white;
+  color: pink;
+  background: transparent;
+  padding: 20px 30px;
+  transform: rotate(-3deg);
+}
+
+/* About Section Text */
+.about-section h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: pink;
+}
+
+.about-section p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #EAEAEA;
+}
+
+/* Social Footer */
+.socials {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.socials p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #B3B3B3;
+}
+
+.icons img {
+  width: 40px;
+  margin: 0 15px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(85deg) saturate(300%);
+}
