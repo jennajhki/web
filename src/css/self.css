@@ -1,0 +1,92 @@
+/* Reset + Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background: #d3d3d3 url('grain-texture.png'); /* grain texture optional */
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    padding: 20px 40px;
+    background-color: #e0e0e0;
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .nav-links a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  .image-text {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .main-img {
+    width: 300px;
+    max-width: 80vw;
+  }
+  
+  .speech-bubble {
+    font-size: 36px;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 20px 30px;
+    background: transparent;
+    transform: rotate(-3deg);
+  }
+  
+  /* Socials */
+  .socials {
+    text-align: center;
+  }
+  
+  .socials p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .icons img {
+    width: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.1);
+  }
+  
